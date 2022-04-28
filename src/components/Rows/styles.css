@@ -1,0 +1,24 @@
+table{
+    border-spacing: 0;
+}
+
+thead{
+    background-color: var(--table-head-bg);
+}
+
+tbody {
+    vertical-align: top;
+}
+
+th{
+    text-align: left;
+    width: 20rem;
+    padding: 1rem;
+}
+
+td {
+    padding: 0.6rem 1rem;
+    text-align: left;
+    width: 20rem;
+    background-color: white;
+}

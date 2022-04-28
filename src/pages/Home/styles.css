@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+
+/*colors and images*/
+:root{
+    --nav-links-color: #fff;
+    --button-hover-color: #878584;
+    --backoffice-menu-bg: #343a40;
+    --table-head-bg: #e9ecef;
+    --nav-link-hover-color: #f79800;
+    --footer-color: #e3e3e3;
+    --dark-layer: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6));
+    --edit-button-color: #ffa207;
+    --delete-button-color: #dc3545;
+    --pagination-active-bg: #007bff;
+    --text-color: #fff;
+    --header-bg-image: url(img_bg_backoffice_usuario.jpg);
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/*header styles*/
+header{
+    background-image: var(--dark-layer), var(--header-bg-image);
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+    color: var(--text-color);
+    box-sizing: border-box;
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.upper_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.backoffice_functions{
+    background-color: var(--backoffice-menu-bg);
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    color: var(--nav-links-color);
+    font-size: 0.7rem;
+    padding: 1rem 5%;
+}
+
+.menu{
+    display: flex;
+    column-gap: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header a:hover {
+    color: var(--nav-link-hover-color);
+}
+
+/*Tamanho da mensagem de alerta*/
+.alert {
+    width:40%;    
+    display:inline-block;
+ }
+
+ /*main*/
+ .userTable {
+    min-height: 40vh;
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.barPag{
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*table styles*/
+table{
+    border-spacing: 0;
+}
+
+thead{
+    background-color: var(--table-head-bg);
+}
+
+tbody {
+    vertical-align: top;
+}
+
+th{
+    text-align: left;
+    width: 20rem;
+    padding: 1rem;
+}
+
+td {
+    padding: 0.6rem 1rem;
+}
+
+th, td {
+    text-align: left;
+    width: 20rem;
+}
+
+/*Buttons*/
+.text_button{
+    font-weight: bold;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.delete_button {
+    color: var(--delete-button-color);
+}
+
+.edit_button {
+    color: var(--edit-button-color);
+}
+
+.edit_button:hover, .delete_button:hover {
+    color: var(--button-hover-color);
+}
+
+.action_buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    column-gap: 1rem;
+    padding: 0.6rem 0;
+    width: 100%;
+  }
+
+/*Footer*/
+footer{
+    background-color: var(--footer-color);
+    min-height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0%;
+}
+  
+
+@media screen and (max-width: 800px){
+    .header_responsive{
+        height: 25vh;
+        font-size: 0.9rem;
+        border-spacing: 0;
+        width: 100%;
+    }
+    .backoffice_functions{
+        font-size: 0.75rem;
+        height: 1vh;
+        column-gap: 0.5rem;
+    }
+    .scroll_responsive{
+        overflow: auto;
+        border-collapse: collapse;
+        overflow-x: auto;
+        width: 100%;
+    }
+    .table_responsive{
+        font-size: 0.8rem;
+        overflow: auto;
+        border-collapse: collapse;
+        overflow-x: auto;
+    }
+    th, td {
+        padding: 8px;
+    }
+    .pagination button{
+        font-size: 0.8rem;
+    }
+    .pagination{
+        font-size: 0.8rem auto;
+    }
+    .action_buttons{
+        font-size: 0.8rem;
+    }
+    .text_button{
+        font-size: 0.8rem;
+    }
+    .footer{
+        font-size: 0.25rem;
+    }
+}

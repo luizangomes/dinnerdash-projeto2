@@ -1,0 +1,30 @@
+table{
+    border-spacing: 0;
+}
+
+thead{
+    background-color: var(--table-head-bg);
+}
+
+.usersRows{
+    background-color: white;
+}
+
+tbody {
+    vertical-align: top;
+}
+
+th{
+    text-align: left;
+    width: 20rem;
+    padding: 1rem;
+}
+
+td {
+    padding: 0.6rem 1rem;
+}
+
+th, td {
+    text-align: left;
+    width: 20rem;
+}

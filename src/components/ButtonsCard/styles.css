@@ -1,0 +1,50 @@
+:root{
+    --nav-links-color: #fff;
+    --button-hover-color: #878584;
+    --backoffice-menu-bg: #343a40;
+    --table-head-bg: #e9ecef;
+    --nav-link-hover-color: #f79800;
+    --footer-color: #e3e3e3;
+    --dark-layer: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6));
+    --edit-button-color: #ffa207;
+    --delete-button-color: #dc3545;
+    --pagination-active-bg: #007bff;
+    --text-color: #fff;
+    --header-bg-image: url(img_bg_backoffice_usuario.jpg);
+}
+
+.text_button{
+    font-weight: bold;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    background-color: white;
+}
+.delete_button {
+    font-weight: bold;
+    color: var(--delete-button-color);
+    background-color: white;
+}
+
+.edit_button {
+    font-weight: bold;
+    color: var(--edit-button-color);
+    background-color: white;
+}
+
+.edit_button:hover, .delete_button:hover {
+    color: var(--button-hover-color);
+    background-color: white;
+}
+
+.button_card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    column-gap: 1rem;
+    padding: 0.6rem 1rem;
+    width: 100%;
+    background-color: white;
+  }
