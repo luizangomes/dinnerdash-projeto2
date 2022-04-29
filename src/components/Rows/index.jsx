@@ -1,5 +1,4 @@
 import "./styles.css"
-import { ButtonsCard } from "../ButtonsCard"
 export function Rows({index, name, email, created_at, onDelete}){
     return(
         <tr id = {"row" + index}>

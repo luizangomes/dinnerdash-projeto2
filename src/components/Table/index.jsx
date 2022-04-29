@@ -93,8 +93,8 @@ export function Table() {
   
   <div className='table'>
     
-    <div class="scroll_responsive">
-      <table class="table_responsive">
+    <div className="scroll_responsive">
+      <table className="table_responsive">
         <thead>
           <tr>
             <th>Nome</th>
@@ -105,7 +105,6 @@ export function Table() {
             {visibleUsers.map(user =>(<Rows onDelete={removeUser} index={user.id} name={user.first_name + " " + user.last_name} email={user.email} created_at={user.created_at}/>))}
         </thead>
       </table>
-      
     </div>
     <p class = "current-page">{page}</p>
     <Pagination nextPage = {nextPage} previousPage = {previousPage} changePage = {changePage}></Pagination>

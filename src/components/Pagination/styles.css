@@ -31,3 +31,12 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
+@media screen and (max-width: 800px){
+    .pagination button{
+        font-size: 0.8rem;
+    }
+    .pagination{
+        font-size: 0.8rem auto;
+    }
+}

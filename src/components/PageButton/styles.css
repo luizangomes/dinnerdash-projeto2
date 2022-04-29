@@ -16,3 +16,16 @@
 .pagination .button{
     border: 50%;
 }
+
+
+@media screen and (max-width: 800px){
+    .pagination button{
+        font-size: 0.8rem;
+    }
+    .pagination{
+        font-size: 0.8rem auto;
+    }
+    .action_buttons{
+        font-size: 0.8rem;
+    }
+}

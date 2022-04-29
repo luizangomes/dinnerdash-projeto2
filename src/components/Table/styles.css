@@ -28,3 +28,25 @@ th, td {
     text-align: left;
     width: 20rem;
 }
+
+* {
+    font-family: Montserrat,sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+@media screen and (max-width: 800px){
+    .table{
+        overflow: auto;
+        border-collapse: collapse;
+        overflow-x: auto;
+        width: 90%;
+    }
+    .table{
+        font-size: 0.8rem;
+        overflow: auto;
+        border-collapse: collapse;
+        overflow-x: auto;
+    }
+}

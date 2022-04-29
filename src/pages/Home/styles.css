@@ -170,11 +170,12 @@ footer{
         height: 1vh;
         column-gap: 0.5rem;
     }
-    .scroll_responsive{
+    .userTable{
         overflow: auto;
         border-collapse: collapse;
         overflow-x: auto;
         width: 100%;
+        margin: 1rem auto;
     }
     .table_responsive{
         font-size: 0.8rem;
