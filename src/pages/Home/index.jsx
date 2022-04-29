@@ -20,7 +20,7 @@ function Home() {
     return ( 
         <div className='Home'>
         <head>
-            <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
+            <meta charSet="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
             <title>dinnerdash | Backoffice</title>
         </head>
 
@@ -46,12 +46,14 @@ function Home() {
                 <a href="#">Categorias de Refeição</a>
             </nav>
                 <div className='userTable'>
-                    <Table data={users} rowsPerPage={5}/>
+                    <Table/>
                 </div>
+            <div className = "footerDiv">       
             <footer>
                 <span>dinnedarsh | todos os direitos reservados</span>
-                <span>desenvolvido por LNG :)  </span>  
+                <span>desenvolvido por LNG e Melo :)  </span>  
             </footer>
+            </div>
         </body>
     </div>
   )
