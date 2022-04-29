@@ -152,8 +152,9 @@ footer{
     min-height: 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0%;
+    width: 100vw;
 }
   
 
@@ -199,4 +200,16 @@ footer{
     .footer{
         font-size: 0.25rem;
     }
+}
+
+.current-page{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footerDiv{
+    position: relative;
+    height: 2rem;
+    bottom: 0;
 }

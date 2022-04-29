@@ -1,8 +1,7 @@
+import "./styles.css"
 
-
-export function PageButton({page}){
+export function PageButton({page,changePage,selected=false}){
+    let buttonId = "button-"+page;
     return(
-    <div class="pagination button">
-        <button type="page">{page}</button>
-    </div>
+        <button id = {buttonId} type="page" onClick={()=>{changePage(page)}}>{page}</button>
 )}
